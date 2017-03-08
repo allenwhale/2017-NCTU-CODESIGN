@@ -337,7 +337,7 @@ main ()
   User_Time = End_Time - Begin_Time;
   double dhrystoneScore = 1000000.0 / (double)User_Time * (double)Number_Of_Runs;
   double dhrystoneMips = dhrystoneScore / 1757.0;
-  double dhrystoneMipsPerMhz = dhrystoneMips / ((double)XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ / 2000000.);
+  double dhrystoneMipsPerMhz = dhrystoneMips / ((double)XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ / 1000000.);
   printf("run time: %d\n", User_Time);
   printf("dhrystoneScore: %d.%03d\n", (int)dhrystoneScore, ((int)(dhrystoneScore * 1000)) % 1000);
   printf("dhrystoneMips: %d.%03d\n", (int)dhrystoneMips, ((int)(dhrystoneMips * 1000)) % 1000);
