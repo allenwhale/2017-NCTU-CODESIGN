@@ -7,4 +7,16 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==lab1 || ORIG_RE
 # IP: bd/lab1/ip/lab1_processing_system7_0_0/lab1_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==lab1_processing_system7_0_0 || ORIG_REF_NAME==lab1_processing_system7_0_0}]
 
+# IP: bd/lab1/ip/lab1_salve_0_0/lab1_salve_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==lab1_salve_0_0 || ORIG_REF_NAME==lab1_salve_0_0}]
+
+# IP: bd/lab1/ip/lab1_ps7_0_axi_periph_0/lab1_ps7_0_axi_periph_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==lab1_ps7_0_axi_periph_0 || ORIG_REF_NAME==lab1_ps7_0_axi_periph_0}]
+
+# IP: bd/lab1/ip/lab1_rst_ps7_0_100M_0/lab1_rst_ps7_0_100M_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==lab1_rst_ps7_0_100M_0 || ORIG_REF_NAME==lab1_rst_ps7_0_100M_0}]
+
+# IP: bd/lab1/ip/lab1_auto_pc_0/lab1_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==lab1_auto_pc_0 || ORIG_REF_NAME==lab1_auto_pc_0}]
+
 # XDC: bd/lab1/lab1_ooc.xdc

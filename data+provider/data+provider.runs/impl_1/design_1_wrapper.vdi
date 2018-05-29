@@ -1,0 +1,663 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri May 26 17:09:59 2017
+# Process ID: 1368
+# Current directory: E:/COD/data+provider/data+provider.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: E:/COD/data+provider/data+provider.runs/impl_1/design_1_wrapper.vdi
+# Journal file: E:/COD/data+provider/data+provider.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'E:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_data_provider_0_0/design_1_data_provider_0_0.dcp' for cell 'design_1_i/data_provider_0'
+INFO: [Project 1-454] Reading design checkpoint 'E:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[12][0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[12][1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[12][2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[12][3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[12][4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[12][5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[12][6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[12][7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:3]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:3]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[11][0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[11][1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[11][2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[11][3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[11][4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[11][5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[11][6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[11][7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:4]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[10][0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[10][1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[10][2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[10][3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[10][4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[10][5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[10][6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_wr_data1[10][7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:5]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[9][0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[9][1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[9][2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[9][3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[9][4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[9][5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[9][6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[9][7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:6]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:6]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[8][0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[8][1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[8][2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[8][3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[8][4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[8][5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[8][6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[8][7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:7]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:7]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[7]__0[0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[7]__0[1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[7]__0[2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[7]__0[3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[7]__0[4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[7]__0[5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[7]__0[6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[7]__0[7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:8]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:8]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[6]__0[0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[6]__0[1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[6]__0[2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[6]__0[3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[6]__0[4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[6]__0[5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[6]__0[6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[6]__0[7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:9]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:9]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[5]__0[0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[5]__0[1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[5]__0[2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[5]__0[3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[5]__0[4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[5]__0[5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[5]__0[6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[5]__0[7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:10]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[4]__0[0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[4]__0[1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[4]__0[2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[4]__0[3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[4]__0[4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[4]__0[5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[4]__0[6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[4]__0[7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:11]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:11]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[3]__0[0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[3]__0[1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[3]__0[2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[3]__0[3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[3]__0[4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[3]__0[5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[3]__0[6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[3]__0[7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:12]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:12]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[31][0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[31][1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[31][2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[31][3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[31][4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[31][5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[31][6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[31][7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:13]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:13]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[30][0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[30][1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[30][2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[30][3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[30][4]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[30][5]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[30][6]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[30][7]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:14]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:14]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[2]__0[0]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:15]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[2]__0[1]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:15]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[2]__0[2]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:15]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/data_provider_0/inst/data_provider_v1_0_S00_AXI_inst/ram/p_rd_data1[2]__0[3]'. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:15]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:15]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:15]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:16]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:17]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:18]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:19]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:20]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:21]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:22]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:23]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:24]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:25]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:26]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:27]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:28]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:29]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:30]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:31]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:32]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:33]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:34]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:35]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:36]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:37]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:38]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:39]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:40]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:41]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:42]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:43]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:44]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:45]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:46]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:47]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:48]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:49]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:50]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:51]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:52]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:53]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:54]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:55]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:56]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:57]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:58]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:59]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:60]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:61]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:62]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:63]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:64]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:65]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:66]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:67]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:68]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:69]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:70]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:71]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:72]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:73]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:74]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:75]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:76]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:77]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:78]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:79]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:80]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:81]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:82]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:83]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:84]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:85]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:86]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:87]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:88]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:89]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:90]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:91]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:92]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:93]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:94]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:95]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:96]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:97]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:98]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:99]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:100]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc:101]
+Finished Parsing XDC File [E:/COD/data+provider/data+provider.srcs/constrs_1/new/design_1_wrapper.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'E:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/COD/data+provider/data+provider.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 507.805 ; gain = 297.355
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 519.348 ; gain = 11.527
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 12c7d712c
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 131e16d2f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.595 . Memory (MB): peak = 1016.984 ; gain = 0.004
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 12 cells.
+Phase 2 Constant propagation | Checksum: 1e46d9eaa
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1016.984 ; gain = 0.004
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 508 unconnected nets.
+INFO: [Opt 31-11] Eliminated 333 unconnected cells.
+Phase 3 Sweep | Checksum: 16f03a86f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1016.984 ; gain = 0.004
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 139764288
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1016.984 ; gain = 0.004
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1016.984 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 139764288
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1016.984 ; gain = 0.004
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 32 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 32 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 32 Total Ports: 64
+Ending PowerOpt Patch Enables Task | Checksum: 19caafc6e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1159.277 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 19caafc6e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1159.277 ; gain = 142.293
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 100 Warnings, 99 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1159.277 ; gain = 651.473
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 1159.277 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/COD/data+provider/data+provider.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/COD/data+provider/data+provider.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1159.277 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d062def5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 176d8c57f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 176d8c57f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1159.277 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 176d8c57f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1db077816
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1db077816
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19fb31d61
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 171977e00
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 171977e00
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 117c7eb23
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 19d8ffd39
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 178381aa8
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 178381aa8
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1159.277 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 178381aa8
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.504. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 172e20552
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1159.277 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 172e20552
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 172e20552
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 172e20552
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1159.277 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 121f1920c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1159.277 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 121f1920c
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1159.277 ; gain = 0.000
+Ending Placer Task | Checksum: 8325286a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1159.277 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+53 Infos, 100 Warnings, 99 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1159.277 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1159.277 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/COD/data+provider/data+provider.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1159.277 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1159.277 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1159.277 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 5d9fb197 ConstDB: 0 ShapeSum: 258576d3 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 89286485
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1170.324 ; gain = 11.047
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 89286485
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1170.324 ; gain = 11.047
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 89286485
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1170.324 ; gain = 11.047
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 89286485
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 1170.324 ; gain = 11.047
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1adfd1797
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:01:02 . Memory (MB): peak = 1177.414 ; gain = 18.137
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.639  | TNS=0.000  | WHS=-0.144 | THS=-11.981|
+
+Phase 2 Router Initialization | Checksum: 19256f06b
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 186d20e99
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 926
+ Number of Nodes with overlaps = 138
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 1828d3868
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:16 . Memory (MB): peak = 1177.414 ; gain = 18.137
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.551  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1c6e1e9de
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:17 . Memory (MB): peak = 1177.414 ; gain = 18.137
+Phase 4 Rip-up And Reroute | Checksum: 1c6e1e9de
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:17 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1c18c8cb2
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1177.414 ; gain = 18.137
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.555  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1c18c8cb2
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1c18c8cb2
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:17 . Memory (MB): peak = 1177.414 ; gain = 18.137
+Phase 5 Delay and Skew Optimization | Checksum: 1c18c8cb2
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1d045963b
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 1177.414 ; gain = 18.137
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.555  | TNS=0.000  | WHS=0.045  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1591bd712
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 1177.414 ; gain = 18.137
+Phase 6 Post Hold Fix | Checksum: 1591bd712
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.987108 %
+  Global Horizontal Routing Utilization  = 1.39926 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 13c0edd58
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 13c0edd58
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:18 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: d223cab6
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.555  | TNS=0.000  | WHS=0.045  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: d223cab6
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:19 . Memory (MB): peak = 1177.414 ; gain = 18.137
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:20 . Memory (MB): peak = 1177.414 ; gain = 18.137
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+67 Infos, 100 Warnings, 99 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:23 . Memory (MB): peak = 1177.414 ; gain = 18.137
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1177.414 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/COD/data+provider/data+provider.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/COD/data+provider/data+provider.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1177.414 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file E:/COD/data+provider/data+provider.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+77 Infos, 100 Warnings, 99 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+Command: write_bitstream -force -no_partial_bitfile design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'E:/COD/data+provider/data+provider.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri May 26 17:14:13 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+85 Infos, 100 Warnings, 99 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:37 ; elapsed = 00:00:56 . Memory (MB): peak = 1557.660 ; gain = 357.680
+INFO: [Common 17-206] Exiting Vivado at Fri May 26 17:14:14 2017...

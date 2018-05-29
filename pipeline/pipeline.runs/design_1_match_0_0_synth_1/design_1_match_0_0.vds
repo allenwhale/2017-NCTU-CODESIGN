@@ -1,0 +1,1216 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat May 27 21:33:03 2017
+# Process ID: 10104
+# Current directory: E:/COD/pipeline/pipeline.runs/design_1_match_0_0_synth_1
+# Command line: vivado.exe -log design_1_match_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_match_0_0.tcl
+# Log file: E:/COD/pipeline/pipeline.runs/design_1_match_0_0_synth_1/design_1_match_0_0.vds
+# Journal file: E:/COD/pipeline/pipeline.runs/design_1_match_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_match_0_0.tcl -notrace
+Command: synth_design -top design_1_match_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5060 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 309.547 ; gain = 78.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_match_0_0' [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ip/design_1_match_0_0/synth/design_1_match_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'match_v1_0' [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'match_v1_0_S00_AXI' [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:461]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ram_t' [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:39]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PARTITION_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'p_ram_t' [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:3]
+	Parameter DATA_WIDTH bound to: 3 - type: integer 
+	Parameter ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'p_ram_t' (1#1) [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ram_t' (2#1) [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:39]
+INFO: [Synth 8-638] synthesizing module 'match_pipeline' [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:123]
+	Parameter RAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter PIPELINE_NUM bound to: 4 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element pipeline[0].fetch_dir_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:230]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[0].layer_reg[2] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[0].layer_reg[1] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[0].layer_reg[0] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[0].adder2_sad_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:386]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[1].fetch_dir_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:230]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[1].layer_reg[2] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[1].layer_reg[1] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[1].layer_reg[0] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[1].adder2_sad_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:386]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[2].fetch_dir_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:230]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[2].layer_reg[2] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[2].layer_reg[1] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[2].layer_reg[0] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[2].adder2_sad_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:386]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[3].fetch_dir_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:230]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[3].layer_reg[2] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[3].layer_reg[1] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[3].layer_reg[0] was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:383]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[3].adder2_sad_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:386]
+INFO: [Synth 8-256] done synthesizing module 'match_pipeline' (3#1) [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:123]
+WARNING: [Synth 8-3848] Net ram1_rd_addr2 in module/entity match_v1_0_S00_AXI does not have driver. [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:667]
+INFO: [Synth 8-256] done synthesizing module 'match_v1_0_S00_AXI' (4#1) [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:461]
+INFO: [Synth 8-256] done synthesizing module 'match_v1_0' (5#1) [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_match_0_0' (6#1) [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ip/design_1_match_0_0/synth/design_1_match_0_0.v:57]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[255]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[254]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[253]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[252]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[251]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[250]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[249]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[248]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[247]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[246]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[245]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[244]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[243]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[242]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[241]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[240]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[239]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[238]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[237]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[236]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[235]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[234]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[233]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[232]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[231]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[230]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[229]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[228]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[227]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[226]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[225]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[224]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[223]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[222]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[221]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[220]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[219]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[218]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[217]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[216]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[215]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[214]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[213]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[212]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[211]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[210]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[209]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[208]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[207]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[206]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[205]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[204]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[203]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[202]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[201]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[200]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[199]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[198]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[197]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[196]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[195]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[194]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[193]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[192]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[191]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[190]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[189]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[188]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[187]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[186]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[185]
+WARNING: [Synth 8-3331] design match_pipeline has unconnected port rd_data[184]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[3]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[2]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[1]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_WSTRB[0]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design match_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 487.898 ; gain = 256.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[11] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[10] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[9] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[8] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[7] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[6] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[5] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[4] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[3] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[2] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[1] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+WARNING: [Synth 8-3295] tying undriven pin ram1:addr2[0] to constant 0 [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:675]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 487.898 ; gain = 256.789
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 919.219 ; gain = 35.070
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 919.219 ; gain = 688.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 919.219 ; gain = 688.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:01:16 . Memory (MB): peak = 919.219 ; gain = 688.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:87]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:209]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:209]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:209]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:270]
+INFO: [Common 17-14] Message 'Synth 8-5818' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element pipeline[1].x_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:199]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[1].y_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:200]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[2].x_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:199]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[2].y_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:200]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[3].x_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:199]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[3].y_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:200]
+INFO: [Synth 8-5546] ROM "slv_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3971] The signal mem_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:24 ; elapsed = 00:02:00 . Memory (MB): peak = 919.219 ; gain = 688.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |ram_t__GB0               |           1|     32834|
+|2     |ram_t__GB1               |           1|     16472|
+|3     |match_pipeline__GB0      |           1|     30379|
+|4     |match_pipeline__GB1      |           1|      3300|
+|5     |match_pipeline__GB2      |           1|      4418|
+|6     |match_pipeline__GB3      |           1|      9400|
+|7     |match_pipeline__GB4      |           1|      9920|
+|8     |match_pipeline__GB5      |           1|     10704|
+|9     |match_pipeline__GB6      |           1|     13765|
+|10    |match_pipeline__GB7      |           1|      8559|
+|11    |match_pipeline__GB8      |           1|     18924|
+|12    |match_pipeline__GB9      |           1|     21913|
+|13    |match_pipeline__GB10     |           1|     26409|
+|14    |match_pipeline__GB11     |           1|      4910|
+|15    |match_pipeline__GB12     |           1|     18861|
+|16    |match_pipeline__GB13     |           1|     16185|
+|17    |match_pipeline__GB14     |           1|     22564|
+|18    |match_pipeline__GB15     |           1|      9696|
+|19    |match_pipeline__GB16     |           1|      3689|
+|20    |match_pipeline__GB17     |           1|      4131|
+|21    |match_pipeline__GB18     |           1|      9766|
+|22    |match_v1_0_S00_AXI__GCB0 |           1|     36381|
+|23    |match_v1_0_S00_AXI__GCB1 |           1|     14354|
+|24    |match_v1_0_S00_AXI__GCB2 |           1|     12732|
+|25    |match_v1_0_S00_AXI__GCB3 |           1|     17144|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1024  
+	   4 Input     16 Bit       Adders := 340   
+	   2 Input      9 Bit       Adders := 62    
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 9     
++---Registers : 
+	              160 Bit    Registers := 64    
+	              128 Bit    Registers := 80    
+	               32 Bit    Registers := 19    
+	               16 Bit    Registers := 1368  
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 64    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 72    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---RAMs : 
+	             1024 Bit         RAMs := 32    
++---Muxes : 
+	   2 Input    160 Bit        Muxes := 128   
+	   2 Input    128 Bit        Muxes := 80    
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1027  
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1086  
+	   2 Input      7 Bit        Muxes := 62    
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 23    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module p_ram_t__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__19 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__20 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__21 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__22 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__23 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__24 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__25 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__26 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__27 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__28 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__29 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__30 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t__31 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module p_ram_t 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module ram_t 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 62    
+	   2 Input      7 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 62    
+	   2 Input      7 Bit        Muxes := 62    
+Module match_pipeline 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1024  
+	   4 Input     16 Bit       Adders := 340   
+	   2 Input      6 Bit       Adders := 9     
++---Registers : 
+	              160 Bit    Registers := 64    
+	              128 Bit    Registers := 64    
+	               16 Bit    Registers := 1368  
+	                6 Bit    Registers := 72    
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input    160 Bit        Muxes := 128   
+	   2 Input     16 Bit        Muxes := 1027  
+	   2 Input      8 Bit        Muxes := 1024  
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module match_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 16    
+	               32 Bit    Registers := 19    
+	               12 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 80    
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element pipeline[2].x_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:199]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[2].y_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:200]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[1].x_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:199]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[1].y_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:200]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[3].y_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:200]
+WARNING: [Synth 8-6014] Unused sequential element pipeline[3].x_reg was removed.  [e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ipshared/c01e/hdl/match_v1_0_S00_AXI.v:199]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_wstrb[3]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_wstrb[2]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_wstrb[1]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_wstrb[0]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design design_1_match_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][8]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][8]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][8]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][8]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][9]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][9]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][9]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][9]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][10]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][10]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][10]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][10]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][11]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][11]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][11]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][11]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][12]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][12]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][12]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][12]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][13]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][13]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][13]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][13]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][14]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][0][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][14]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][2][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][14]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][3][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][14]' (FD) to 'match_pipeline_1i_3/pipeline[0].adder11_abs_reg[10][1][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][8]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][8]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][8]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][8]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][9]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][9]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][9]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][9]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][10]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][10]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][10]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][10]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][11]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][11]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][11]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][11]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][12]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][12]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][12]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][12]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][13]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][13]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][13]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][13]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][14]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][0][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][14]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][2][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][14]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][3][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][14]' (FD) to 'match_pipeline_1i_3/pipeline[2].adder11_abs_reg[10][1][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][8]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][8]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][8]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][8]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][9]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][9]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][9]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][9]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][10]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][10]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][10]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][10]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][11]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][11]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][11]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][11]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][12]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][12]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][12]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][12]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][13]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][13]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][13]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][13]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][13]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][14]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][14]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][0][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][14]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][2][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][14]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][3][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][14]' (FD) to 'match_pipeline_1i_3/pipeline[1].adder11_abs_reg[10][1][15]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][0][8]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][0][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][2][8]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][2][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][3][8]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][3][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][1][8]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][1][9]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][0][9]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][0][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][2][9]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][2][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][3][9]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][3][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][1][9]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][1][10]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][0][10]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][0][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][2][10]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][2][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][3][10]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][3][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][1][10]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][1][11]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][0][11]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][0][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][2][11]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][2][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][3][11]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][3][12]'
+INFO: [Synth 8-3886] merging instance 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][1][11]' (FD) to 'match_pipeline_1i_3/pipeline[3].adder11_abs_reg[10][1][12]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/p_0_out_inferred__13/\pipeline[1].x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (match_pipeline_1i_18/p_0_out_inferred__13/\pipeline[1].x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/p_0_out_inferred__23/\pipeline[3].x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/p_0_out_inferred__23/\pipeline[3].x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/p_0_out_inferred__4/\pipeline[2].x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (match_pipeline_1i_18/p_0_out_inferred__4/\pipeline[2].x_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (match_pipeline_1i_18/\pipeline[1].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/\pipeline[3].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (match_pipeline_1i_18/\pipeline[1].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/\pipeline[3].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (match_pipeline_1i_18/\pipeline[1].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/\pipeline[3].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (match_pipeline_1i_18/\pipeline[1].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/\pipeline[3].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (match_pipeline_1i_18/\pipeline[1].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/\pipeline[3].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (match_pipeline_1i_18/\pipeline[1].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/\pipeline[3].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (match_pipeline_1i_18/\pipeline[1].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/\pipeline[3].fetch_x_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (match_pipeline_1i_18/\pipeline[3].fetch_x_reg[1] )
+INFO: [Synth 8-3971] The signal gen_ram[0].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[1].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[2].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[3].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[4].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[5].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[6].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[7].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[8].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[9].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[10].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[11].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[12].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[13].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[14].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[15].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[16].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[17].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[18].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[19].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[20].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[21].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[22].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[23].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[24].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[25].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[26].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[27].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[28].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[29].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[30].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal gen_ram[31].ram/mem_reg was recognized as a true dual port RAM template.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_wr_addr1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ram1_wr_addr1_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:38 ; elapsed = 00:06:19 . Memory (MB): peak = 919.219 ; gain = 688.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
+|p_ram_t:    | mem_reg    | 128 x 8(WRITE_FIRST)   | W | R | 128 x 8(WRITE_FIRST)   | W | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |ram_t__GB0               |           1|     11704|
+|2     |ram_t__GB1               |           1|      9218|
+|3     |match_pipeline__GB0      |           1|     28621|
+|4     |match_pipeline__GB1      |           1|      2424|
+|5     |match_pipeline__GB2      |           1|      3439|
+|6     |match_pipeline__GB3      |           1|      6824|
+|7     |match_pipeline__GB4      |           1|      7348|
+|8     |match_pipeline__GB5      |           1|      8074|
+|9     |match_pipeline__GB6      |           1|     10331|
+|10    |match_pipeline__GB7      |           1|      6182|
+|11    |match_pipeline__GB8      |           1|     15852|
+|12    |match_pipeline__GB9      |           1|     16396|
+|13    |match_pipeline__GB10     |           1|     19527|
+|14    |match_pipeline__GB11     |           1|      3792|
+|15    |match_pipeline__GB12     |           1|     13674|
+|16    |match_pipeline__GB13     |           1|     11875|
+|17    |match_pipeline__GB14     |           1|     18684|
+|18    |match_pipeline__GB15     |           1|      7124|
+|19    |match_pipeline__GB16     |           1|      2767|
+|20    |match_pipeline__GB17     |           1|      3043|
+|21    |match_pipeline__GB18     |           1|      7342|
+|22    |match_v1_0_S00_AXI__GCB0 |           1|      3179|
+|23    |match_v1_0_S00_AXI__GCB1 |           1|       423|
+|24    |match_v1_0_S00_AXI__GCB2 |           1|       107|
+|25    |match_v1_0_S00_AXI__GCB3 |           1|      5741|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:55 ; elapsed = 00:06:40 . Memory (MB): peak = 1037.945 ; gain = 806.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:58 ; elapsed = 00:06:43 . Memory (MB): peak = 1040.953 ; gain = 809.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |ram_t__GB0               |           1|      5615|
+|2     |match_pipeline__GB0      |           1|     28621|
+|3     |match_pipeline__GB1      |           1|      2424|
+|4     |match_pipeline__GB2      |           1|      3439|
+|5     |match_pipeline__GB3      |           1|      6824|
+|6     |match_pipeline__GB4      |           1|      7348|
+|7     |match_pipeline__GB5      |           1|      8074|
+|8     |match_pipeline__GB6      |           1|     10331|
+|9     |match_pipeline__GB7      |           1|      6182|
+|10    |match_pipeline__GB8      |           1|     15852|
+|11    |match_pipeline__GB9      |           1|     16139|
+|12    |match_pipeline__GB10     |           1|     19527|
+|13    |match_pipeline__GB11     |           1|      3638|
+|14    |match_pipeline__GB12     |           1|     13674|
+|15    |match_pipeline__GB13     |           1|     11875|
+|16    |match_pipeline__GB14     |           1|     18684|
+|17    |match_pipeline__GB15     |           1|      7124|
+|18    |match_pipeline__GB16     |           1|      2767|
+|19    |match_pipeline__GB17     |           1|      3043|
+|20    |match_pipeline__GB18     |           1|      7342|
+|21    |match_v1_0_S00_AXI__GCB0 |           1|       975|
+|22    |match_v1_0_S00_AXI__GCB1 |           1|        51|
+|23    |match_v1_0_S00_AXI__GCB2 |           1|       107|
+|24    |match_v1_0_S00_AXI__GCB3 |           1|      5008|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[0].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[1].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[2].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[3].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[4].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[5].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[6].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[7].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[8].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[9].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[10].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[11].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[12].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[13].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[14].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[15].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[16].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[17].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[18].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[19].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[20].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[21].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[22].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[23].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[24].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[25].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[26].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[27].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[28].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[29].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[30].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[31].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:27 ; elapsed = 00:07:40 . Memory (MB): peak = 1040.953 ; gain = 809.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |match_pipeline__GB0  |           1|     17891|
+|2     |match_pipeline__GB6  |           1|      4389|
+|3     |match_pipeline__GB8  |           1|      5956|
+|4     |match_pipeline__GB9  |           1|      6247|
+|5     |match_pipeline__GB10 |           1|      7801|
+|6     |match_pipeline__GB12 |           1|      5121|
+|7     |match_pipeline__GB13 |           1|      4645|
+|8     |match_pipeline__GB14 |           1|      9916|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[0].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[1].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[2].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[3].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[4].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[5].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[6].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[7].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[8].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[9].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[10].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[11].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[12].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[13].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[14].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[15].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[16].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[17].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[18].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[19].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[20].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[21].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[22].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[23].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[24].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[25].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[26].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[27].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[28].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[29].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[30].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/match_v1_0_S00_AXI_inst/ram1/gen_ram[31].ram/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:44 ; elapsed = 00:08:07 . Memory (MB): peak = 1040.953 ; gain = 809.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:45 ; elapsed = 00:08:08 . Memory (MB): peak = 1040.953 ; gain = 809.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:53 ; elapsed = 00:08:19 . Memory (MB): peak = 1040.953 ; gain = 809.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:53 ; elapsed = 00:08:19 . Memory (MB): peak = 1040.953 ; gain = 809.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:15 ; elapsed = 00:10:10 . Memory (MB): peak = 1040.953 ; gain = 809.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:16 ; elapsed = 00:10:11 . Memory (MB): peak = 1040.953 ; gain = 809.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_match_0_0 | inst/match_v1_0_S00_AXI_inst/match_pipeline_1/mintree_mvy_reg[2][3][5] | 7      | 24    | NO           | NO                 | YES               | 24     | 0       | 
+|design_1_match_0_0 | inst/match_v1_0_S00_AXI_inst/match_pipeline_1/mintree_mvx_reg[2][3][5] | 7      | 16    | NO           | NO                 | YES               | 16     | 0       | 
++-------------------+------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |  5466|
+|2     |LUT1     |   111|
+|3     |LUT2     |  8217|
+|4     |LUT3     | 13534|
+|5     |LUT4     | 10054|
+|6     |LUT5     | 11426|
+|7     |LUT6     |  5691|
+|8     |MUXF7    |    64|
+|9     |RAMB18E1 |    32|
+|10    |SRL16E   |    40|
+|11    |FDRE     | 36047|
+|12    |FDSE     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------+-------------------+------+
+|      |Instance                    |Module             |Cells |
++------+----------------------------+-------------------+------+
+|1     |top                         |                   | 90698|
+|2     |  inst                      |match_v1_0         | 90698|
+|3     |    match_v1_0_S00_AXI_inst |match_v1_0_S00_AXI | 90698|
+|4     |      match_pipeline_1      |match_pipeline     | 86736|
+|5     |      ram1                  |ram_t              |   553|
+|6     |        \gen_ram[0].ram     |p_ram_t            |    57|
+|7     |        \gen_ram[10].ram    |p_ram_t_0          |     9|
+|8     |        \gen_ram[11].ram    |p_ram_t_1          |     9|
+|9     |        \gen_ram[12].ram    |p_ram_t_2          |     9|
+|10    |        \gen_ram[13].ram    |p_ram_t_3          |     9|
+|11    |        \gen_ram[14].ram    |p_ram_t_4          |     9|
+|12    |        \gen_ram[15].ram    |p_ram_t_5          |     9|
+|13    |        \gen_ram[16].ram    |p_ram_t_6          |    25|
+|14    |        \gen_ram[17].ram    |p_ram_t_7          |    25|
+|15    |        \gen_ram[18].ram    |p_ram_t_8          |     9|
+|16    |        \gen_ram[19].ram    |p_ram_t_9          |     9|
+|17    |        \gen_ram[1].ram     |p_ram_t_10         |    57|
+|18    |        \gen_ram[20].ram    |p_ram_t_11         |     9|
+|19    |        \gen_ram[21].ram    |p_ram_t_12         |     9|
+|20    |        \gen_ram[22].ram    |p_ram_t_13         |     9|
+|21    |        \gen_ram[23].ram    |p_ram_t_14         |     9|
+|22    |        \gen_ram[24].ram    |p_ram_t_15         |     9|
+|23    |        \gen_ram[25].ram    |p_ram_t_16         |     9|
+|24    |        \gen_ram[26].ram    |p_ram_t_17         |     1|
+|25    |        \gen_ram[27].ram    |p_ram_t_18         |     1|
+|26    |        \gen_ram[28].ram    |p_ram_t_19         |     1|
+|27    |        \gen_ram[29].ram    |p_ram_t_20         |     1|
+|28    |        \gen_ram[2].ram     |p_ram_t_21         |    33|
+|29    |        \gen_ram[30].ram    |p_ram_t_22         |    49|
+|30    |        \gen_ram[31].ram    |p_ram_t_23         |    41|
+|31    |        \gen_ram[3].ram     |p_ram_t_24         |    25|
+|32    |        \gen_ram[4].ram     |p_ram_t_25         |    25|
+|33    |        \gen_ram[5].ram     |p_ram_t_26         |    25|
+|34    |        \gen_ram[6].ram     |p_ram_t_27         |    25|
+|35    |        \gen_ram[7].ram     |p_ram_t_28         |    17|
+|36    |        \gen_ram[8].ram     |p_ram_t_29         |    10|
+|37    |        \gen_ram[9].ram     |p_ram_t_30         |     9|
++------+----------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:16 ; elapsed = 00:10:11 . Memory (MB): peak = 1040.953 ; gain = 809.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:29 ; elapsed = 00:09:39 . Memory (MB): peak = 1040.953 ; gain = 378.523
+Synthesis Optimization Complete : Time (s): cpu = 00:06:16 ; elapsed = 00:10:13 . Memory (MB): peak = 1040.953 ; gain = 809.844
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5498 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_match_0_0' is not ideal for floorplanning, since the cellview 'match_pipeline' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+366 Infos, 138 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:38 ; elapsed = 00:10:37 . Memory (MB): peak = 1040.953 ; gain = 809.844
+INFO: [Common 17-1381] The checkpoint 'E:/COD/pipeline/pipeline.runs/design_1_match_0_0_synth_1/design_1_match_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1040.953 ; gain = 0.000
+write_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1040.953 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1040.953 ; gain = 0.000
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/COD/pipeline/pipeline.srcs/sources_1/bd/design_1/ip/design_1_match_0_0/design_1_match_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 36 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/COD/pipeline/pipeline.runs/design_1_match_0_0_synth_1/design_1_match_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1040.953 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.679 . Memory (MB): peak = 1040.953 ; gain = 0.000
+write_verilog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1040.953 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1040.953 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat May 27 21:44:52 2017...

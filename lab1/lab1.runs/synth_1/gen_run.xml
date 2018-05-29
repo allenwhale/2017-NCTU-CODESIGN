@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1489383213">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1497084124">
   <File Type="RDS-PROPCONSTRS" Name="lab1_wrapper_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="lab1_wrapper.tcl"/>
   <File Type="RDS-RDS" Name="lab1_wrapper.vds"/>
@@ -37,10 +37,11 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="lab1_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="lab1_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="lab1_salve_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="lab1_rst_ps7_0_100M_0"/>
 </GenRun>

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Apr 28 23:27:21 2017
+# Process ID: 13044
+# Current directory: E:/COD/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6300 E:\COD\lab2\lab2.xpr
+# Log file: E:/COD/lab2/vivado.log
+# Journal file: E:/COD/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/COD/lab2/lab2.xpr
+launch_sdk -workspace E:/COD/lab2/lab2.sdk -hwspec E:/COD/lab2/lab2.sdk/lab2_wrapper.hdf

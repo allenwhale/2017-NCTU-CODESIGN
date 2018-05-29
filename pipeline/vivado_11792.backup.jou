@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat May 27 20:29:25 2017
+# Process ID: 11792
+# Current directory: E:/COD/pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10652 E:\COD\pipeline\pipeline.xpr
+# Log file: E:/COD/pipeline/vivado.log
+# Journal file: E:/COD/pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/COD/pipeline/pipeline.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_1_match_0_0_synth_1

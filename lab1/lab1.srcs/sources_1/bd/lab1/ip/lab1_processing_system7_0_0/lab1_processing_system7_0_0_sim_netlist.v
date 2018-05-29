@@ -1,10 +1,10 @@
-// Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+// Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-// Date        : Mon Mar 13 13:35:03 2017
-// Host        : shlab_58-PC running 64-bit Service Pack 1  (build 7601)
+// Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+// Date        : Sat Jun 10 16:44:07 2017
+// Host        : DESKTOP-PEMQ38K running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/shlab_89/Desktop/lab1/lab1.srcs/sources_1/bd/lab1/ip/lab1_processing_system7_0_0/lab1_processing_system7_0_0_sim_netlist.v
+//               E:/COD/lab1/lab1.srcs/sources_1/bd/lab1/ip/lab1_processing_system7_0_0/lab1_processing_system7_0_0_sim_netlist.v
 // Design      : lab1_processing_system7_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "lab1_processing_system7_0_0,processing_system7_v5_5_processing_system7,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2016.4" *) 
+(* CHECK_LICENSE_TYPE = "lab1_processing_system7_0_0,processing_system7_v5_5_processing_system7,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2017.1" *) 
 (* NotValidForBitStream *)
 module lab1_processing_system7_0_0
    (TTC0_WAVE0_OUT,
@@ -5165,8 +5165,8 @@ module glbl ();
     reg JTAG_USER_TDO3_GLBL = 1'bz;
     reg JTAG_USER_TDO4_GLBL = 1'bz;
 
-    assign (weak1, weak0) GSR = GSR_int;
-    assign (weak1, weak0) GTS = GTS_int;
+    assign (strong1, weak0) GSR = GSR_int;
+    assign (strong1, weak0) GTS = GTS_int;
     assign (weak1, weak0) PRLD = PRLD_int;
 
     initial begin

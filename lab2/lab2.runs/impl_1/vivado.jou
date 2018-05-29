@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Apr 25 16:37:35 2017
+# Process ID: 9740
+# Current directory: E:/COD/lab2/lab2.runs/impl_1
+# Command line: vivado.exe -log lab2_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab2_wrapper.tcl -notrace
+# Log file: E:/COD/lab2/lab2.runs/impl_1/lab2_wrapper.vdi
+# Journal file: E:/COD/lab2/lab2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab2_wrapper.tcl -notrace

@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Apr 25 16:36:24 2017
+# Process ID: 3320
+# Current directory: E:/COD/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3196 E:\COD\lab2\lab2.xpr
+# Log file: E:/COD/lab2/vivado.log
+# Journal file: E:/COD/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/COD/lab2/lab2.xpr
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+open_run impl_1
+close_design
+ipx::edit_ip_in_project -upgrade true -name compute_sad_v1_0_v1_0_project -directory E:/COD/lab2/lab2.tmp/compute_sad_v1_0_v1_0_project e:/COD/lab2/ip_repo/compute_sad_1.0/component.xml
+close_project

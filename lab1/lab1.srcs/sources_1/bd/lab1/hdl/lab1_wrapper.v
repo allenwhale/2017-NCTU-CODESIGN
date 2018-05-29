@@ -1,8 +1,8 @@
-//Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+//Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-//Date        : Mon Mar 13 13:33:04 2017
-//Host        : shlab_58-PC running 64-bit Service Pack 1  (build 7601)
+//Tool Version: Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+//Date        : Sat Jun 10 16:41:36 2017
+//Host        : DESKTOP-PEMQ38K running 64-bit major release  (build 9200)
 //Command     : generate_target lab1_wrapper.bd
 //Design      : lab1_wrapper
 //Purpose     : IP block netlist

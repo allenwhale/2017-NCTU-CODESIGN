@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../lab2.ip_user_files/bd/lab2_tb/ip/lab2_tb_microblaze_0_0/sim/lab2_tb_microblaze_0_0.vhd"
+vhdl xil_defaultlib  "../../../lab2.ip_user_files/bd/lab2_tb/ip/lab2_tb_dlmb_v10_0/sim/lab2_tb_dlmb_v10_0.vhd"
+vhdl xil_defaultlib  "../../../lab2.ip_user_files/bd/lab2_tb/ip/lab2_tb_ilmb_v10_0/sim/lab2_tb_ilmb_v10_0.vhd"
+vhdl xil_defaultlib  "../../../lab2.ip_user_files/bd/lab2_tb/ip/lab2_tb_dlmb_bram_if_cntlr_0/sim/lab2_tb_dlmb_bram_if_cntlr_0.vhd"
+vhdl xil_defaultlib  "../../../lab2.ip_user_files/bd/lab2_tb/ip/lab2_tb_ilmb_bram_if_cntlr_0/sim/lab2_tb_ilmb_bram_if_cntlr_0.vhd"
+vhdl xil_defaultlib  "../../../lab2.ip_user_files/bd/lab2_tb/ip/lab2_tb_mdm_1_0/sim/lab2_tb_mdm_1_0.vhd"
+vhdl xil_defaultlib  "../../../lab2.ip_user_files/bd/lab2_tb/ip/lab2_tb_rst_clk_wiz_1_100M_0/sim/lab2_tb_rst_clk_wiz_1_100M_0.vhd"
+
+# Do not sort compile order
+nosort

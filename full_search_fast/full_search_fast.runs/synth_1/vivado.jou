@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Jun 10 03:04:43 2017
+# Process ID: 12192
+# Current directory: E:/COD/full_search_fast/full_search_fast.runs/synth_1
+# Command line: vivado.exe -log full_search_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source full_search_wrapper.tcl
+# Log file: E:/COD/full_search_fast/full_search_fast.runs/synth_1/full_search_wrapper.vds
+# Journal file: E:/COD/full_search_fast/full_search_fast.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source full_search_wrapper.tcl -notrace

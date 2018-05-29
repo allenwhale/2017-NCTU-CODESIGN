@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Jun 10 02:57:25 2017
+# Process ID: 1212
+# Current directory: E:/COD/full_search_fast
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4792 E:\COD\full_search_fast\full_search_fast.xpr
+# Log file: E:/COD/full_search_fast/vivado.log
+# Journal file: E:/COD/full_search_fast\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/COD/full_search_fast/full_search_fast.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/COD/full_search_fast/full_search_fast.runs/impl_1/full_search_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/COD/full_search_fast/full_search_fast.runs/impl_1/full_search_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_bd_design {E:/COD/full_search_fast/full_search_fast.srcs/sources_1/bd/full_search/full_search.bd}

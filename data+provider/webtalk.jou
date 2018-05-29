@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri May 26 17:50:22 2017
+# Process ID: 10220
+# Current directory: e:/COD/data+provider
+# Command line: wbtcv.exe -mode batch -source e:/cod/data+provider/data+provider.tmp/data_provider_v1_0_v1_0_project/data_provider_v1_0_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: e:/COD/data+provider/webtalk.log
+# Journal file: e:/COD/data+provider\webtalk.jou
+#-----------------------------------------------------------
+source e:/cod/data+provider/data+provider.tmp/data_provider_v1_0_v1_0_project/data_provider_v1_0_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace

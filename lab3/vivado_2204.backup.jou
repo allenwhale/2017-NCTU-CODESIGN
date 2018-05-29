@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat May 27 14:26:08 2017
+# Process ID: 2204
+# Current directory: E:/COD/lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10888 E:\COD\lab3\lab3.xpr
+# Log file: E:/COD/lab3/vivado.log
+# Journal file: E:/COD/lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/COD/lab3/lab3.xpr
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name match_v1_0_v1_0_project -directory E:/COD/lab3/lab3.tmp/match_v1_0_v1_0_project e:/COD/lab3/ip_repo/match_1.0/component.xml
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+current_project lab3
+close_project

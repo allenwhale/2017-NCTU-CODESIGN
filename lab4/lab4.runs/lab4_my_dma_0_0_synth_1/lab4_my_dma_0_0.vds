@@ -1,0 +1,431 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat Jun 10 13:50:11 2017
+# Process ID: 600
+# Current directory: E:/COD/lab4/lab4.runs/lab4_my_dma_0_0_synth_1
+# Command line: vivado.exe -log lab4_my_dma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab4_my_dma_0_0.tcl
+# Log file: E:/COD/lab4/lab4.runs/lab4_my_dma_0_0_synth_1/lab4_my_dma_0_0.vds
+# Journal file: E:/COD/lab4/lab4.runs/lab4_my_dma_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab4_my_dma_0_0.tcl -notrace
+Command: synth_design -top lab4_my_dma_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12096 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 314.684 ; gain = 83.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab4_my_dma_0_0' [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ip/lab4_my_dma_0_0/synth/lab4_my_dma_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'my_dma_v1_0' [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 0 - type: integer 
+	Parameter C_M00_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M00_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'my_dma_v1_0_S00_AXI' [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_S00_AXI.v:231]
+INFO: [Synth 8-226] default block is never used [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_S00_AXI.v:374]
+WARNING: [Synth 8-6014] Unused sequential element byte_index was removed.  [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_S00_AXI.v:221]
+INFO: [Synth 8-256] done synthesizing module 'my_dma_v1_0_S00_AXI' (1#1) [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-638] synthesizing module 'my_dma_v1_0_M00_AXI' [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:56]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 0 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 31 - type: integer 
+	Parameter STATE_IDLE bound to: 2'b00 
+	Parameter STATE_READ bound to: 2'b01 
+	Parameter STATE_WRITE bound to: 2'b10 
+	Parameter STATE_DONE bound to: 2'b11 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:266]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:267]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:271]
+INFO: [Synth 8-638] synthesizing module 'calc_burst_length' [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:25]
+INFO: [Synth 8-256] done synthesizing module 'calc_burst_length' (2#1) [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:25]
+INFO: [Synth 8-638] synthesizing module 'bram' [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:2]
+	Parameter ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bram' (3#1) [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:2]
+INFO: [Synth 8-226] default block is never used [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:709]
+INFO: [Synth 8-256] done synthesizing module 'my_dma_v1_0_M00_AXI' (4#1) [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:56]
+INFO: [Synth 8-256] done synthesizing module 'my_dma_v1_0' (5#1) [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'lab4_my_dma_0_0' (6#1) [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ip/lab4_my_dma_0_0/synth/lab4_my_dma_0_0.v:57]
+WARNING: [Synth 8-3331] design calc_burst_length has unconnected port size[2]
+WARNING: [Synth 8-3331] design calc_burst_length has unconnected port size[1]
+WARNING: [Synth 8-3331] design calc_burst_length has unconnected port size[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 354.012 ; gain = 123.230
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 354.012 ; gain = 123.230
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 666.289 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 666.289 ; gain = 435.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 666.289 ; gain = 435.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 666.289 ; gain = 435.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "buffer_rd_addr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:498]
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:628]
+WARNING: [Synth 8-327] inferring latch for variable 'buffer_rd_addr_reg' [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:336]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 666.289 ; gain = 435.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 12    
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 21    
++---RAMs : 
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     10 Bit        Muxes := 2     
+	   9 Input      9 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module my_dma_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+Module calc_burst_length 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      9 Bit        Muxes := 1     
+Module bram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module my_dma_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               10 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:498]
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ipshared/06af/hdl/my_dma_v1_0_M00_AXI.v:628]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_BRESP[1]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_RRESP[1]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_M00_AXI has unconnected port M_AXI_RUSER[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design my_dma_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'inst/my_dma_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/my_dma_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/my_dma_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/my_dma_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/my_dma_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/my_dma_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/my_dma_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module lab4_my_dma_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/my_dma_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module lab4_my_dma_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/my_dma_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module lab4_my_dma_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/my_dma_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module lab4_my_dma_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/my_dma_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module lab4_my_dma_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/my_dma_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module lab4_my_dma_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 666.289 ; gain = 435.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|bram:       | mem_reg    | 1 K x 32(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 1      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 666.289 ; gain = 435.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 666.289 ; gain = 435.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/my_dma_v1_0_M00_AXI_inst/buffer/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 673.188 ; gain = 442.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 673.188 ; gain = 442.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 673.188 ; gain = 442.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 673.188 ; gain = 442.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 673.188 ; gain = 442.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 673.188 ; gain = 442.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 673.188 ; gain = 442.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    59|
+|2     |LUT1     |   112|
+|3     |LUT2     |    64|
+|4     |LUT3     |   184|
+|5     |LUT4     |    97|
+|6     |LUT5     |    25|
+|7     |LUT6     |    64|
+|8     |RAMB36E1 |     1|
+|9     |FDRE     |   453|
+|10    |LDC      |    10|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------------------------+--------------------+------+
+|      |Instance                     |Module              |Cells |
++------+-----------------------------+--------------------+------+
+|1     |top                          |                    |  1069|
+|2     |  inst                       |my_dma_v1_0         |  1069|
+|3     |    my_dma_v1_0_M00_AXI_inst |my_dma_v1_0_M00_AXI |   830|
+|4     |      buffer                 |bram                |    12|
+|5     |    my_dma_v1_0_S00_AXI_inst |my_dma_v1_0_S00_AXI |   239|
++------+-----------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 673.188 ; gain = 442.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 673.188 ; gain = 130.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 673.188 ; gain = 442.406
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  LDC => LDCE: 10 instances
+
+40 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 673.188 ; gain = 442.406
+INFO: [Common 17-1381] The checkpoint 'E:/COD/lab4/lab4.runs/lab4_my_dma_0_0_synth_1/lab4_my_dma_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/COD/lab4/lab4.srcs/sources_1/bd/lab4/ip/lab4_my_dma_0_0/lab4_my_dma_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/COD/lab4/lab4.runs/lab4_my_dma_0_0_synth_1/lab4_my_dma_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 673.188 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 10 13:51:02 2017...

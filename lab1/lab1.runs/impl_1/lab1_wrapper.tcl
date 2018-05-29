@@ -42,8 +42,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -53,17 +51,22 @@ set rc [catch {
   set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/shlab_89/Desktop/lab1/lab1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/shlab_89/Desktop/lab1/lab1.xpr [current_project]
-  set_property ip_output_repo C:/Users/shlab_89/Desktop/lab1/lab1.cache/ip [current_project]
+  set_property webtalk.parent_dir E:/COD/lab1/lab1.cache/wt [current_project]
+  set_property parent.project_path E:/COD/lab1/lab1.xpr [current_project]
+  set_property ip_repo_paths E:/COD/lab1/ip_repo/salve_1.0 [current_project]
+  set_property ip_output_repo E:/COD/lab1/lab1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/shlab_89/Desktop/lab1/lab1.runs/synth_1/lab1_wrapper.dcp
-  add_files -quiet c:/Users/shlab_89/Desktop/lab1/lab1.srcs/sources_1/bd/lab1/ip/lab1_processing_system7_0_0/lab1_processing_system7_0_0.dcp
-  set_property netlist_only true [get_files c:/Users/shlab_89/Desktop/lab1/lab1.srcs/sources_1/bd/lab1/ip/lab1_processing_system7_0_0/lab1_processing_system7_0_0.dcp]
-  read_xdc -ref lab1_processing_system7_0_0 -cells inst c:/Users/shlab_89/Desktop/lab1/lab1.srcs/sources_1/bd/lab1/ip/lab1_processing_system7_0_0/lab1_processing_system7_0_0.xdc
-  set_property processing_order EARLY [get_files c:/Users/shlab_89/Desktop/lab1/lab1.srcs/sources_1/bd/lab1/ip/lab1_processing_system7_0_0/lab1_processing_system7_0_0.xdc]
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
+  add_files -quiet E:/COD/lab1/lab1.runs/synth_1/lab1_wrapper.dcp
+  set_msg_config -source 4 -id {BD 41-1661} -suppress
+  set_param project.isImplRun true
+  add_files E:/COD/lab1/lab1.srcs/sources_1/bd/lab1/lab1.bd
+  set_property is_locked true [get_files E:/COD/lab1/lab1.srcs/sources_1/bd/lab1/lab1.bd]
+  set_param project.isImplRun false
+  set_param project.isImplRun true
   link_design -top lab1_wrapper -part xc7z020clg484-1
-  write_hwdef -file lab1_wrapper.hwdef
+  set_param project.isImplRun false
+  write_hwdef -force -file lab1_wrapper.hwdef
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -119,10 +122,10 @@ set rc [catch {
   write_checkpoint -force lab1_wrapper_routed.dcp
   catch { report_drc -file lab1_wrapper_drc_routed.rpt -pb lab1_wrapper_drc_routed.pb -rpx lab1_wrapper_drc_routed.rpx }
   catch { report_methodology -file lab1_wrapper_methodology_drc_routed.rpt -rpx lab1_wrapper_methodology_drc_routed.rpx }
-  catch { report_timing_summary -warn_on_violation -max_paths 10 -file lab1_wrapper_timing_summary_routed.rpt -rpx lab1_wrapper_timing_summary_routed.rpx }
   catch { report_power -file lab1_wrapper_power_routed.rpt -pb lab1_wrapper_power_summary_routed.pb -rpx lab1_wrapper_power_routed.rpx }
   catch { report_route_status -file lab1_wrapper_route_status.rpt -pb lab1_wrapper_route_status.pb }
   catch { report_clock_utilization -file lab1_wrapper_clock_utilization_routed.rpt }
+  catch { report_timing_summary -warn_on_violation -max_paths 10 -file lab1_wrapper_timing_summary_routed.rpt -rpx lab1_wrapper_timing_summary_routed.rpx }
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
@@ -138,10 +141,12 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force lab1_wrapper.mmi }
-  write_bitstream -force -no_partial_bitfile lab1_wrapper.bit 
+  write_bitstream -force lab1_wrapper.bit 
   catch { write_sysdef -hwdef lab1_wrapper.hwdef -bitfile lab1_wrapper.bit -meminfo lab1_wrapper.mmi -file lab1_wrapper.sysdef }
-  catch {write_debug_probes -quiet -force debug_nets}
+  catch {write_debug_probes -no_partial_ltxfile -quiet -force debug_nets}
+  catch {file copy -force debug_nets.ltx lab1_wrapper.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {

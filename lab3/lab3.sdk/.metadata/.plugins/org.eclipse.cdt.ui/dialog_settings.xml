@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="xilffs" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
+	<section name="org.eclipse.cdt.internal.ui.text.QuickOutline">
+		<item value="true" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_USE_PERSISTED_SIZE"/>
+		<item value="436" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_Y_ORIGIN"/>
+		<item value="400" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_WIDTH"/>
+		<item value="true" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
+		<item value="320" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_HEIGHT"/>
+		<item value="916" key="org.eclipse.cdt.internal.ui.text.COutlineInformationControlDIALOG_X_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+	<section name="org.eclipse.cdt.internal.ui.typehierarchy.OpenTypeInHierarchyActionSettings">
+		<item value="true" key="show_enums"/>
+		<item value="true" key="show_unions"/>
+		<item value="false" key="show_macros"/>
+		<item value="true" key="show_classes"/>
+		<item value="false" key="show_functions"/>
+		<item value="true" key="show_lowlevel"/>
+		<item value="false" key="show_namespaces"/>
+		<item value="false" key="show_enumerators"/>
+		<item value="true" key="show_structs"/>
+		<item value="738" key="x"/>
+		<item value="444" key="width"/>
+		<item value="78" key="y"/>
+		<item value="true" key="show_typedefs"/>
+		<item value="false" key="show_variables"/>
+		<item value="663" key="height"/>
+	</section>
+	<section name="org.eclipse.cdt.internal.ui.includebrowser.IBViewPart">
+		<item value="false" key="showFolders"/>
+		<item value="false" key="systemFilter"/>
+		<item value="false" key="includedBy"/>
+		<item value="false" key="inactiveFilter"/>
+	</section>
+</section>

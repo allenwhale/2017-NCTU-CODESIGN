@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Sat May 27 20:46:20 2017
+# Process ID: 3176
+# Current directory: E:/COD/pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2008 E:\COD\pipeline\pipeline.xpr
+# Log file: E:/COD/pipeline/vivado.log
+# Journal file: E:/COD/pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/COD/pipeline/pipeline.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force E:/COD/pipeline/pipeline.runs/impl_1/design_1_wrapper.sysdef E:/COD/pipeline/pipeline.sdk/design_1_wrapper.hdf
+
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force E:/COD/pipeline/pipeline.runs/impl_1/design_1_wrapper.sysdef E:/COD/pipeline/pipeline.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace E:/COD/pipeline/pipeline.sdk -hwspec E:/COD/pipeline/pipeline.sdk/design_1_wrapper.hdf
+ipx::edit_ip_in_project -upgrade true -name match_v1_0_v1_0_project -directory E:/COD/pipeline/pipeline.tmp/match_v1_0_v1_0_project e:/COD/pipeline/ip_repo/match_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project pipeline
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project match_v1_0_v1_0_project
+current_project pipeline
+upgrade_ip -vlnv xilinx.com:user:match:1.0 [get_ips  design_1_match_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_match_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+file copy -force E:/COD/pipeline/pipeline.runs/impl_1/design_1_wrapper.sysdef E:/COD/pipeline/pipeline.sdk/design_1_wrapper.hdf
+
+close_design
+close_project
